@@ -6,6 +6,9 @@ This script implements generators to get training data on-the-fly. The custom ge
 
 The `infuncs3.py` file (https://github.com/mlnotebook/infuncs) has helper functions that get the train/test/validation split from a datafile (`get_split`) and to preprocess and yield the data to a generator, including data augmnetation, (`get_batch`).
 
+Some parts for plotting data/model come from https://github.com/kcct-fujimotolab/3DCNN
+My ResNet implementation is based on https://github.com/JihongJu/keras-resnet3d/blob/master/resnet3d/resnet3d.py
+
 Notes
 * This is built on the Keras library which performs the model fitting using `fit_generator` - a function that takes in custom generators.
 * The generator will automatically randomise the input on each epoch.
