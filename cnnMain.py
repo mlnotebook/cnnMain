@@ -27,7 +27,7 @@ from scipy.stats import wasserstein_distance
 
 ''' MY SCRIPTS '''
 from infuncs3 import get_split, get_batch
-from ResNet3D import Resnet3DBuilder
+from ResNet3D import Resnet3DBuilder # https://github.com/JihongJu/keras-resnet3d/blob/master/resnet3d/resnet3d.py
 
 ''' Set some options in TensorFlow that will allow better memory usage of the GPU '''
 from keras.backend.tensorflow_backend import set_session
